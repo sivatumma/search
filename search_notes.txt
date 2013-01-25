@@ -1,0 +1,16 @@
+Notes on writing search engines.
+
+Apart from thinking how to crawl, using BeautifulSoup, Html parsers, lxml, html5lib, We should also think about
+some precautions to take.
+
+1. Is a document well formed ? First of all what is its type ? is it html, xml, xhtml, or pdf or what is it ?
+2. Is it well formed in the context of its type ? Who would judge this? If it is a PDF, who will tell 
+  the search program if the pdf is correct one and readable?
+3. We should have some mechanism to search a site completely and index by themselves. There should be an 
+	idiom for everyone to search and index their own website completely. Say like pixelo By that, One will have a clear 
+	understanding of what exactly the correctness of their pages and files those are served by their web 
+	servers. Whilst, There should be a way for coders and specification writers of how the specification should
+	enable search programs search for some content. Let us there is ajax. But there is no common principle of 
+	how those documents are to be searched and their wait times and all those things.
+4. We can build a tool that parses and crawls the index and web pages, and we could clearly document the errors 
+	in parsing the document.
