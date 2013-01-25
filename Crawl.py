@@ -51,7 +51,8 @@ def process(links, level):
                         print urls.links
                         process(urls.links, level-1)
                     except:
-                        print 'Looks there is a problem parsing this URL. There can be many reasons. But for now, skipping this and moving on to the next URL.'
+                        print 'Looks there is a problem parsing this URL. There can be many reasons. \
+                              But for now, skipping this and moving on to the next URL.'
                         continue
                 else:
                     print 'URL is not an html related file. Not parsing this. Going on to next link. \n\n'
