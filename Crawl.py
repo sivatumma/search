@@ -1,6 +1,14 @@
 '''
 Created on Jan 24, 2013
 
+A very basic program that crawls the web pages starting with the seed "http://python.org/".
+Not tested beyong 3 levels, and a TDD job is not done. Excuse me, I am in a hurry.
+
+@require BeautifulSoup, please get it from 
+"http://www.crummy.com/software/BeautifulSoup/bs4/download/beautifulsoup4-4.1.3.tar.gz"
+Unzip it with winrar probably, and installing gives you bs4 folder under the Lib/Site-Packages of Python installation.
+Take it and put alongside of this file. just run this - just a python module.
+
 @author: Don
 '''
 import sys
@@ -10,7 +18,7 @@ import urlparse
 from bs4 import BeautifulSoup 
 
 
-class URLs(urllib.FancyURLopener):
+class URLs():
     version = 'Chrome Version 24.0.1312.56 m - Just a test program - Excuse for Not being clear'
     #    Using this as an instance variable so that each instance gets a separate set of URLs to check
     links = []
@@ -27,6 +35,8 @@ def process(links, level):
                 print ''
                 print 'Processing link : ',  link
                 fileType = link.rsplit(".")
+                #   Avoiding unnecessary wait time reading executables as of now.
+                #   When we make a search engine, we can try to cache these things in our servers.
                 if (fileType[len(fileType)-1] not in ('msi', 'exe', 'bz2')):
                     try:
                         page = urllib.urlopen(link)
