@@ -2,7 +2,6 @@
 Created on Jan 24, 2013
 
 A very basic program that crawls the web pages starting with the seed "http://python.org/".
-Not tested beyong 3 levels, and a TDD job is not done. Excuse me, I am in a hurry.
 
 @require BeautifulSoup, please get it from 
 "http://www.crummy.com/software/BeautifulSoup/bs4/download/beautifulsoup4-4.1.3.tar.gz"
