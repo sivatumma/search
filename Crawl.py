@@ -8,6 +8,10 @@ A very basic program that crawls the web pages starting with the seed "http://py
 Unzip it with winrar probably, and installing gives you bs4 folder under the Lib/Site-Packages of Python installation.
 Take it and put alongside of this file. just run this - just a python module.
 
+Please note: This breaks after a while, as new technologies files are coming to web and the parsers I used fail.
+It looks like We require to use lxml or html5lib for a better parsing. 
+
+
 @author: Don
 '''
 import sys
