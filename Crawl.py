@@ -12,7 +12,7 @@ Please note: This breaks after a while, as new technologies files are coming to 
 It looks like We require to use lxml or html5lib for a better parsing. 
 
 
-@author: Don
+@author: Siva Tumma <SivaTumma@gmail.com>
 '''
 import sys
 import urllib
